@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+    <servlet>
+        <servlet-name>Contact</servlet-name>
+        <servlet-class>Servlets.Contact</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Contact</servlet-name>
+        <url-pattern>/Contact</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Clients</servlet-name>
+        <servlet-class>Servlets.Clients</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Clients</servlet-name>
+        <url-pattern>/Clients</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Fournisseurs</servlet-name>
+        <servlet-class>Servlets.Fournisseurs</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Fournisseurs</servlet-name>
+        <url-pattern>/Fournisseurs</url-pattern>
+    </servlet-mapping>
+</web-app>
