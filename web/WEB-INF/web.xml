@@ -5,29 +5,84 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
            version="3.0">
     <servlet>
-        <servlet-name>Contact</servlet-name>
-        <servlet-class>Servlets.Contact</servlet-class>
+        <servlet-name>Creer</servlet-name>
+        <servlet-class>Servlets.Creer</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Contact</servlet-name>
-        <url-pattern>/Contact</url-pattern>
+        <servlet-name>Creer</servlet-name>
+        <url-pattern>/Creer</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Clients</servlet-name>
-        <servlet-class>Servlets.Clients</servlet-class>
+        <servlet-name>Lister</servlet-name>
+        <servlet-class>Servlets.Lister</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Clients</servlet-name>
-        <url-pattern>/Clients</url-pattern>
+        <servlet-name>Lister</servlet-name>
+        <url-pattern>/Lister</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Fournisseurs</servlet-name>
-        <servlet-class>Servlets.Fournisseurs</servlet-class>
+        <servlet-name>Modifier</servlet-name>
+        <servlet-class>Servlets.Modifier</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Fournisseurs</servlet-name>
-        <url-pattern>/Fournisseurs</url-pattern>
+        <servlet-name>Modifier</servlet-name>
+        <url-pattern>/Modifier</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Supprimer</servlet-name>
+        <servlet-class>Servlets.Supprimer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Supprimer</servlet-name>
+        <url-pattern>/Supprimer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Servlets.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>Servlets.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginSuccess</servlet-name>
+        <servlet-class>Servlets.LoginSuccess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginSuccess</servlet-name>
+        <url-pattern>/LoginSuccess</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Introuvable</servlet-name>
+        <servlet-class>Servlets.Introuvable</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Introuvable</servlet-name>
+        <url-pattern>/Introuvable</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/Introuvable</location>
+    </error-page>
+
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
 </web-app>

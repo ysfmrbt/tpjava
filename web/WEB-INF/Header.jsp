@@ -8,25 +8,24 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <title>Espace Admin</title>
     <style rel="stylesheet">
-        body {
-            background-color: #EFF2C2;
-            font-family: Arial;
-            padding: 2em;
+        #navigation {
+            display: flex;
+            justify-content: flex-start;
+            padding: 1em;
+            background: #fff;
         }
         .container {
-            display:flex;
-            justify-content: space-between;
-            background-color: #fff;
-            margin:0 auto;
-            padding: 2em;
+            background: #fff;
+            padding: 1em 20vw;
+            border: 1px solid #C3D3E6;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Société XYZ</h1>
+    <header id="navigation">
         <%@ include file="Menu.jsp" %>
-    </div>
+    </header>
 </body>
 </html>
